@@ -12,6 +12,7 @@ All this using less battery and with higher accuracy indoors than the GPS.
 **About FIND**
 
 The **Framework for Internal Navigation and Discovery (FIND)** allows you to use your (Android) smartphone or WiFi-enabled computer (laptop or Raspberry Pi or etc.) to determine your position within your home or office. You can easily use this system in place of motion sensors as its resolution will allow your phone to distinguish whether you are in the living room, the kitchen or the bedroom, etc. The position information can then be used in a variety of ways including home automation, way-finding, or tracking!
+To learn more about it or to run your own private server, check out https://github.com/schollz/find
 
 ----------
 **Requirements**
@@ -66,11 +67,11 @@ Above JSON is sent via POST https://ml.internalpositioning.com/learn or POST htt
 
 ----------
 **App Screenshots**
-![alt tag](Screenshots/learn.png "Learn Activity")
-![alt tag](Screenshots/learning.png "Learning Activity")
-![alt tag](Screenshots/track.png "Track Activity")
-![alt tag](Screenshots/settings.png "Settings Activity")
-![alt tag](Screenshots/nav-header.png "Nav Header")
+![alt tag](screenshots/learn.png "Learn Activity")
+![alt tag](screenshots/learning.png "Learning Activity")
+![alt tag](screenshots/track.png "Track Activity")
+![alt tag](screenshots/settings.png "Settings Activity")
+![alt tag](screenshots/nav-header.png "Nav Header")
 
 ----------
 
