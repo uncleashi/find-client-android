@@ -25,6 +25,7 @@ To learn more about it or to run your own private server, check out https://gith
 If you use Android Studio these dependencies are managed automatically for you. (When you first import the project you'll be asked to sync the relevant modules from the SDK manager.)
 
 **Getting Started**
+
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 As usual, you get started by cloning the project to your local machine:
@@ -68,7 +69,7 @@ Above JSON is sent via POST https://ml.internalpositioning.com/learn or POST htt
 ----------
 **App Screenshots**
 
-![alt tag](screenshots/learn.png "Learn Activity")
+![alt tag](screenshots/learn.png "Learn Activity" =180x320)
 ![alt tag](screenshots/learn.png "Learning Activity")
 ![alt tag](screenshots/track.png "Track Activity")
 ![alt tag](screenshots/settings.png "Settings Activity")
