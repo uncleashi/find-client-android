@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Find</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_quit">Quit</string>
+    <string name="action_Find_github">Visit FIND Github</string>
+    <string name="action_app_github">Visit App Github</string>
+    <string name="action_issue">Report Issue</string>
+    <string name="action_Find">Visit FIND website</string>
+    <string name="action_kontext">Visit Kontext website</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="click_to_set">[click to set]</string>
+</resources>

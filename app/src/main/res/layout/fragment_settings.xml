@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.findTools.Find.SettingsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/headingServer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Server Settings"
+            android:textColor="#1565C0"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/fieldUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_below="@+id/headingServer"
+            android:layout_marginTop="10dp"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/hintUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName: Unique name to identify yourseflf to FIND server"
+            android:layout_below="@id/fieldUserName"
+            android:layout_marginTop="5dp"/>
+
+        <View
+            android:id="@+id/seperator1"
+            android:layout_height="1dip"
+            android:layout_width="match_parent"
+            android:layout_columnSpan="3"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/hintUserName"
+            android:background="#AAAAAA"
+            />
+
+        <TextView
+            android:id="@+id/fieldGroupName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group Name"
+            android:layout_below="@+id/seperator1"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/hintGroupName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GroupName: Name of your tracked location group. Use something unique"
+            android:layout_below="@id/fieldGroupName"
+            android:layout_marginTop="5dp"/>
+
+        <View
+            android:id="@+id/seperator2"
+            android:layout_height="1dip"
+            android:layout_width="match_parent"
+            android:layout_columnSpan="3"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/hintGroupName"
+            android:background="#AAAAAA"
+            />
+
+        <TextView
+            android:id="@+id/fieldServerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Server Name"
+            android:layout_below="@+id/seperator2"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/hintServerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ServerName: Default is FIND server"
+            android:layout_below="@id/fieldServerName"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:id="@+id/headingFgSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foreground Settings"
+            android:layout_below="@id/hintServerName"
+            android:textColor="#1565C0"
+            android:textSize="16sp"
+            android:layout_marginTop="25dp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/labelLearnInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn Scan Interval"
+            android:layout_below="@+id/headingFgSetting"
+            android:layout_marginTop="10dp"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/labelLearnIntervalSec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sec"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/headingFgSetting"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/fieldLearnInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_toStartOf="@id/labelLearnIntervalSec"
+            android:layout_below="@+id/headingFgSetting"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hintLearnInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn Scan Interval in seconds. Default is 3 sec"
+            android:layout_below="@id/fieldLearnInterval"
+            android:layout_marginTop="5dp"/>
+
+        <View
+            android:id="@+id/seperator3"
+            android:layout_height="1dip"
+            android:layout_width="match_parent"
+            android:layout_columnSpan="3"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/hintLearnInterval"
+            android:background="#AAAAAA"
+            />
+
+        <TextView
+            android:id="@+id/labelLearnPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn Scan Period"
+            android:layout_below="@+id/seperator3"
+            android:layout_marginTop="10dp"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/labelLearnPeriodMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/seperator3"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/fieldLearnPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_toStartOf="@id/labelLearnPeriodMin"
+            android:layout_below="@+id/seperator3"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hintLearnPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn Scan Period in min. Default is 3 min"
+            android:layout_below="@id/fieldLearnPeriod"
+            android:layout_marginTop="5dp"/>
+
+        <View
+            android:id="@+id/seperator4"
+            android:layout_height="1dip"
+            android:layout_width="match_parent"
+            android:layout_columnSpan="3"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/hintLearnPeriod"
+            android:background="#AAAAAA"
+            />
+
+        <TextView
+            android:id="@+id/labelTrackInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Scan Interval"
+            android:layout_below="@+id/seperator4"
+            android:layout_marginTop="10dp"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/labelTrackIntervalSec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sec"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/seperator4"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/fieldTrackInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:layout_toStartOf="@id/labelTrackIntervalSec"
+            android:layout_below="@+id/seperator4"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/hintTrackInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Scan Interval in seconds. Default is 6 sec"
+            android:layout_below="@id/labelTrackInterval"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp" />
+
+    </RelativeLayout>
+</ScrollView>

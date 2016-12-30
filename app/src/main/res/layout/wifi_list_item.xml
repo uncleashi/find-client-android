@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/wifiName"
+        android:text="Wifi Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textStyle="normal|bold"
+        android:textColor="#212121"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/labelGrpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group:"
+        android:layout_below="@id/wifiName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/fieldGrpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="group"
+        android:layout_below="@id/wifiName"
+        android:layout_toEndOf="@id/labelGrpName"
+        android:layout_marginStart="10dp"
+        android:textColor="#1565C0"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/labelUsrName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User:"
+        android:layout_below="@id/wifiName"
+        android:layout_toEndOf="@id/fieldGrpName"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/fieldUsrName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user"
+        android:layout_below="@id/wifiName"
+        android:layout_toEndOf="@id/labelUsrName"
+        android:layout_marginStart="10dp"
+        android:textColor="#1565C0"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#c0c0c0"
+        android:layout_below="@+id/labelUsrName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
