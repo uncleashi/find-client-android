@@ -67,6 +67,7 @@ Above JSON is sent via POST https://ml.internalpositioning.com/learn or POST htt
 
 ----------
 **App Screenshots**
+
 ![alt tag](screenshots/learn.png "Learn Activity")
 ![alt tag](screenshots/learn.png "Learning Activity")
 ![alt tag](screenshots/track.png "Track Activity")
