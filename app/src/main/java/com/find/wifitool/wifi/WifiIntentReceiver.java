@@ -67,16 +67,16 @@ public class WifiIntentReceiver extends IntentService {
         try {
             mWifiData = new WifiData();
             mWifiManager = (WifiManager) this.getSystemService(Context.WIFI_SERVICE);
-            JSONObject wifiResults = new JSONObject();
             JSONArray wifiResultsArray = new JSONArray();
             List<ScanResult> mResults = mWifiManager.getScanResults();
 
             for (ScanResult result : mResults) {
+                JSONObject wifiResults = new JSONObject();
                 if (shouldLog(result)) {
                     wifiResults.put("mac", result.BSSID);
                     wifiResults.put("rssi", result.level);
+                    wifiResultsArray.put(wifiResults);
                 }
-                wifiResultsArray.put(wifiResults);
             }
             wifiFingerprint = new JSONObject();
             wifiFingerprint.put("group", groupName);
